@@ -1,0 +1,105 @@
+.header {
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  margin: 15rem 0 0 calc(20%);
+  max-width: 100%;
+}
+
+span {
+  margin-left: calc(1vw);
+}
+
+h1 {
+  color: #45d3dd;
+  text-shadow: black 0.1em 0.1em 0.4em;
+  margin-left: -3rem;
+  font-family: roboto;
+  font-weight: 500;
+  font-size: clamp(2rem, 7vw, 3rem);
+  max-width: 350px;
+  line-height: 100%;
+}
+
+h1::before {
+  content: "<h1>";
+  position: absolute;
+  color: #707070;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  display: flex;
+  margin: -2rem 0 1rem 3rem;
+  filter: blur(1px);
+  text-shadow: none;
+}
+
+h1::after {
+  content: "</h1>";
+  position: absolute;
+  color: #707070;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  display: flex;
+  margin-left: 3rem;
+  filter: blur(1px);
+  text-shadow: none;
+}
+
+.destaque {
+  color: #5bf9ff;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 7vw, 3.2rem);
+  text-shadow: #ff0000 -0.2rem -0.1rem 0.2rem;
+}
+
+p {
+  color: #505050;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin: 3rem 0 3rem 1rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  font-family: IBM Plex Mono;
+}
+
+p::before {
+  content: "<p>";
+  position: absolute;
+  color: #707070;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  display: flex;
+  margin: -1.5rem 0 1rem -1rem;
+  filter: blur(1px);
+  text-shadow: none;
+}
+
+p::after {
+  content: "</p>";
+  position: absolute;
+  color: #707070;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  display: flex;
+  margin: 0.2rem 0 0 -1rem;
+  filter: blur(1px);
+  text-shadow: none;
+}
+
+a {
+  text-align: center;
+  background-color: #333;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  padding: 10px 15px;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  position: relative;
+}
+
+a:hover {
+  background: rgba(255, 0, 0, 0.8);
+  color: #333;
+  transition: all 400ms ease-in-out;
+}
