@@ -1,27 +1,20 @@
-<nav>
-  <div class="container">
-    <span class="logo"><a href="#">M.</a></span>
-    <ul class="link ">
-      <li>
-        <a href="">
-          My Description
-        </a>
-      </li>
-      <li>
-        <a href="">
-          work
-        </a>
-      </li>
-      <li>
-        <a href="">
-          My Skills
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div class="container">
+  <nav class="navbar">
+    <div>
+      <span class="logo"><a href="#">M.</a></span>
+    </div>
+    <button class="mobile-nav" aria-controls="menu" aria-expanded="false">
+      <span class="sr-only"><img src="assets/img/icon-hamburguer.svg"></span>
+    </button>
+    <!-- <input type="checkbox" id="toggler">
+    <label for="toggler"><i class="ri-menu-line"></i></label> -->
+    <div id="menu">
+      <ul data-visible='true' class="list">
+        <li><a href="#">My Description</a></li>
+        <li><a href="#">work</a></li>
+        <li><a href="#">My Skills</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
