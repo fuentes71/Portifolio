@@ -1,13 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+
 .header {
   display: flex;
   flex-flow: column;
   justify-items: center;
-  margin: 15rem 0 0 calc(20%);
+  margin: 20rem 0 0 calc(20%);
   max-width: 100%;
 }
+.gear,
+.insideGear {
+  position: absolute;
+  top: 18vh;
+  right: 13vw;
+}
 
-span {
-  margin-left: calc(1vw);
+.second {
+  top: 55vh;
+  right: 67%;
+  transform: rotate(275deg);
+}
+
+.third {
+  top: 180vh;
+}
+.gear .gear1,
+.gear2,
+.gear3 {
+  width: 180px;
+  height: auto;
+  margin: -60px -28px 0 -280px;
+  -webkit-animation: spin 3s linear infinite;
+  -moz-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+.gear .gear2 {
+  width: 150px;
+  margin: -60px 110px 0 25px;
+}
+
+.gear .gear3 {
+  position: absolute;
+  width: 130px;
+  margin: 90px 369px -3px -330px;
+  -webkit-animation: spinReverse 3s linear infinite;
+  -moz-animation: spinReverse 3s linear infinite;
+  animation: spinReverse 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinReverse {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@-moz-keyframes spinReverse {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spinReverse {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+.insideGear span {
+  margin: -23px 0 0 -402px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 1000;
+  background-color: #fff;
+  color: #333;
+  border: 6px solid #333;
+  border-radius: 50%;
+  padding: 38px 12px;
+
+  position: absolute;
+  transform: rotate(15deg);
+}
+
+.insideGear .css {
+  margin: 2px 0px 0px -230px;
+  padding: 30px 12px;
+  font-size: 2rem;
+  border: 3px solid;
+}
+
+.insideGear .html {
+  margin: 117px 0px 0px -303px;
+  padding: 24px 12px;
+  font-size: 1rem;
+  border: 4px solid;
+  transform: rotate(-25deg);
 }
 
 h1 {
@@ -17,89 +118,241 @@ h1 {
   font-family: roboto;
   font-weight: 500;
   font-size: clamp(2rem, 7vw, 3rem);
-  max-width: 350px;
+  max-width: 550px;
   line-height: 100%;
 }
 
-h1::before {
+h1::before,
+h1::after {
   content: "<h1>";
   position: absolute;
   color: #707070;
+  font-family: "La Belle Aurore", cursive;
   font-weight: 800;
   font-size: clamp(0.8rem, 1vw, 1rem);
   display: flex;
-  margin: -2rem 0 1rem 3rem;
-  filter: blur(1px);
+  margin: -3rem 0 1rem 3rem;
   text-shadow: none;
 }
 
 h1::after {
-  content: "</h1>";
-  position: absolute;
-  color: #707070;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 1rem);
-  display: flex;
+  content: "<h1/>";
+  margin: 0;
   margin-left: 3rem;
-  filter: blur(1px);
-  text-shadow: none;
 }
 
-.destaque {
+.focus {
   color: #5bf9ff;
   font-weight: 700;
   font-size: clamp(2.2rem, 7vw, 3.2rem);
   text-shadow: #ff0000 -0.2rem -0.1rem 0.2rem;
 }
 
+.line::before {
+  margin-top: 30px;
+  left: 20vw;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 65%;
+  background-color: #444;
+}
+
 p {
   color: #505050;
   text-shadow: black 0.1em 0.1em 0.2em;
-  margin: 3rem 0 3rem 1rem;
+  margin: 4.5rem 0 3rem 1rem;
   font-size: clamp(0.8rem, 2.5vw, 1.2rem);
   font-family: IBM Plex Mono;
 }
 
-p::before {
+p::before,
+p::after {
   content: "<p>";
   position: absolute;
   color: #707070;
+  font-family: "La Belle Aurore", cursive;
   font-weight: 800;
   font-size: clamp(0.8rem, 1vw, 0.9rem);
   display: flex;
   margin: -1.5rem 0 1rem -1rem;
-  filter: blur(1px);
   text-shadow: none;
 }
 
 p::after {
-  content: "</p>";
-  position: absolute;
-  color: #707070;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 0.9rem);
-  display: flex;
+  content: "<p/>";
   margin: 0.2rem 0 0 -1rem;
-  filter: blur(1px);
-  text-shadow: none;
 }
 
-a {
+.contact a {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  background-color: #333;
+  letter-spacing: 3px;
+  text-decoration: none;
+  margin: 2vh 60% 6px 28%;
   color: #ff0000;
   border: 1px solid #ff0000;
   padding: 10px 15px;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
-  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  font-size: clamp(0.6rem, 1vw, 1.1rem);
   cursor: pointer;
-  transition: all 400ms ease-in-out;
+  overflow: hidden;
   position: relative;
 }
 
-a:hover {
-  background: rgba(255, 0, 0, 0.8);
+.contact a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ff0000;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.contact a::before {
+  width: 100%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.contact a:hover::before {
+  height: 400%;
+}
+.contact a:hover {
   color: #333;
-  transition: all 400ms ease-in-out;
+}
+h2 {
+  color: #ffa800;
+  text-shadow: black 0.1em 0.1em 0.4em;
+  margin-left: -3rem;
+  margin-top: 50vh;
+  font-family: roboto;
+  font-weight: 800;
+  font-size: clamp(2rem, 7vw, 4rem);
+  max-width: 550px;
+  line-height: 100%;
+  letter-spacing: -3px;
+}
+
+h2::before,
+h2::after {
+  content: "<h2>";
+  position: absolute;
+  color: #707070;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  display: flex;
+  margin: -3rem 0 1rem 3rem;
+  text-shadow: none;
+}
+
+h2::after {
+  content: "<h2/>";
+  margin: 0;
+  margin-left: 3rem;
+}
+
+.description p {
+  text-align: center;
+  font-size: 2rem;
+  max-width: 60%;
+  margin-left: 10%;
+  color: #bbbbbb;
+  letter-spacing: 4px;
+  line-height: 100%;
+
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.description p::before {
+  margin: -1.5rem 0 1rem -8%;
+}
+.description p::after {
+  margin: 0.2rem 0 0 -8%;
+}
+
+.scroll {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 0%;
+  position: absolute;
+  top: 80vh;
+  right: 10%;
+  gap: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: none;
+  color: #fff;
+
+  z-index: 999;
+}
+
+.scroll span {
+  font-size: 1.2rem;
+  margin: 0;
+  writing-mode: vertical-rl;
+  animation-name: anima;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes anima {
+  0% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .gear,
+  .insideGear {
+    display: none;
+  }
+
+  h2 {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin-top: 15rem;
+  }
+
+  h1 {
+    max-width: 350px;
+  }
+
+  .description p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: 5rem;
+  }
+  h2 {
+    margin-top: 10vh;
+  }
+  .scroll {
+    display: none;
+  }
+
+  .line::before {
+    display: none;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
 }
