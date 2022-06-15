@@ -24,6 +24,10 @@
 .third {
   top: 180vh;
 }
+
+.four {
+  top: 290vh;
+}
 .gear .gear1,
 .gear2,
 .gear3 {
@@ -163,7 +167,7 @@ p {
   text-shadow: black 0.1em 0.1em 0.2em;
   margin: 4.5rem 0 3rem 1rem;
   font-size: clamp(0.8rem, 2.5vw, 1.2rem);
-  font-family: IBM Plex Mono;
+  font-family: "Courier New", Courier, monospace;
 }
 
 p::before,
@@ -240,7 +244,7 @@ h2 {
 
 h2::before,
 h2::after {
-  content: "<h2>";
+  content: "< h2 >";
   position: absolute;
   color: #707070;
   font-family: "La Belle Aurore", cursive;
@@ -252,28 +256,28 @@ h2::after {
 }
 
 h2::after {
-  content: "<h2/>";
+  content: "< h2/ >";
   margin: 0;
   margin-left: 3rem;
 }
 
-.description p {
+.container-description p {
   text-align: center;
   font-size: 2rem;
-  max-width: 60%;
-  margin-left: 10%;
+  max-width: 70%;
+  margin-left: 5%;
   color: #bbbbbb;
+  text-shadow: none;
+
   letter-spacing: 4px;
   line-height: 100%;
-
-  font-family: "IBM Plex Mono", monospace;
 }
 
-.description p::before {
-  margin: -1.5rem 0 1rem -8%;
+.container-description p::before {
+  margin: -1.5rem 0 1rem -4%;
 }
-.description p::after {
-  margin: 0.2rem 0 0 -8%;
+.container-description p::after {
+  margin: 0.2rem 0 0 -4%;
 }
 
 .scroll {
@@ -289,8 +293,6 @@ h2::after {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-shadow: none;
   color: #fff;
-
-  z-index: 999;
 }
 
 .scroll span {
@@ -304,6 +306,145 @@ h2::after {
   animation-direction: alternate;
 }
 
+.container-skill .list {
+  margin-top: 7%;
+  margin-bottom: auto;
+}
+.list p::after,
+.list p::before {
+  display: none;
+}
+.list li {
+  list-style: none;
+}
+
+.list p {
+  color: #bbbbbb;
+  text-shadow: none;
+  margin: 3% 20% 40px 0;
+}
+.list .progress {
+  margin-top: -35px;
+  left: 21vw;
+  position: absolute;
+  width: 40%;
+  height: 2px;
+}
+
+.list .front {
+  width: 30%;
+  background-color: #307897;
+}
+.list .back {
+  width: 15%;
+  background-color: rgb(255, 34, 83);
+}
+.list .angular {
+  width: 25%;
+  background-color: #dd1b16;
+}
+.list .react {
+  width: 10%;
+  background-color: #61dbfb;
+}
+.list .vue {
+  width: 2%;
+  background-color: #41b883;
+}
+.container-contact h2 {
+  margin-top: 15vh;
+}
+.container-contact p {
+  color: #bbbbbb;
+  text-shadow: none;
+  text-align: start;
+  letter-spacing: 4px;
+
+  line-height: 100%;
+  font-size: 1.5rem;
+  max-width: 70%;
+  margin-bottom: auto;
+}
+
+.container-contact .form::after,
+.container-contact .form::before {
+  content: "<form>";
+  position: absolute;
+  color: #707070;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  display: flex;
+  margin: -1.5rem 0 1rem 0;
+  text-shadow: none;
+}
+
+.container-contact .form::after {
+  content: "<form/>";
+  margin-top: 0.2rem;
+}
+
+.container-contact .form {
+  margin-top: 6vh;
+}
+
+form {
+  width: 100%;
+  max-width: 30rem;
+  margin-left: 2vw;
+}
+.container-contact form label,
+.container-contact form input,
+.container-contact form textarea {
+  display: block;
+  width: 100%;
+}
+form label {
+  position: absolute;
+  font-size: 1rem;
+  color: #bbbbbb;
+  padding: 20px 20px;
+  max-width: max-content;
+}
+form input,
+form textarea {
+  background-color: #444;
+  border-style: none;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #bbbbbb;
+  transition: border-color, box-shadown 0.5s;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus {
+  outline: none;
+  border: 0 0 2px 0;
+  border-bottom: #45d3dd;
+  box-shadow: 0 0 0 2px #61dbfb;
+}
+form button {
+  background-color: #333;
+  border: 2px solid red;
+  color: red;
+  padding: 10px 20px;
+  height: 100%;
+}
+
+.container-map {
+  display: block;
+  position: absolute;
+  top: 3878px;
+  right: 30vh;
+  max-width: 100%;
+}
 @keyframes anima {
   0% {
     transform: translateY(-30%);
@@ -333,7 +474,8 @@ h2::after {
     max-width: 350px;
   }
 
-  .description p {
+  .container-description p,
+  .container-contact p {
     font-size: 1.5rem;
   }
 }
@@ -352,7 +494,8 @@ h2::after {
     display: none;
   }
 
-  .description p {
+  .container-description p,
+  .container-contact p {
     font-size: 1rem;
   }
 }
