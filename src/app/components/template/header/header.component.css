@@ -1,155 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
-
 .header {
   display: flex;
   flex-flow: column;
   justify-items: center;
   margin: 20rem 0 0 calc(20%);
   max-width: 100%;
-}
-.gear,
-.insideGear {
-  position: absolute;
-  top: 18vh;
-  right: 13vw;
-}
-
-.second {
-  top: 55vh;
-  right: 67%;
-  transform: rotate(275deg);
-}
-
-.third {
-  top: 180vh;
-}
-
-.four {
-  top: 290vh;
-}
-.gear .gear1,
-.gear2,
-.gear3 {
-  width: 180px;
-  height: auto;
-  margin: -60px -28px 0 -280px;
-  -webkit-animation: spin 3s linear infinite;
-  -moz-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
-}
-
-.gear .gear2 {
-  width: 150px;
-  margin: -60px 110px 0 25px;
-}
-
-.gear .gear3 {
-  position: absolute;
-  width: 130px;
-  margin: 90px 369px -3px -330px;
-  -webkit-animation: spinReverse 3s linear infinite;
-  -moz-animation: spinReverse 3s linear infinite;
-  animation: spinReverse 3s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@-moz-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spinReverse {
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-@-moz-keyframes spinReverse {
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-@keyframes spinReverse {
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-
-.insideGear span {
-  margin: -23px 0 0 -402px;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 1000;
-  background-color: #fff;
-  color: #333;
-  border: 6px solid #333;
-  border-radius: 50%;
-  padding: 38px 12px;
-
-  position: absolute;
-  transform: rotate(15deg);
-}
-
-.insideGear .css {
-  margin: 2px 0px 0px -230px;
-  padding: 30px 12px;
-  font-size: 2rem;
-  border: 3px solid;
-}
-
-.insideGear .html {
-  margin: 117px 0px 0px -303px;
-  padding: 24px 12px;
-  font-size: 1rem;
-  border: 4px solid;
-  transform: rotate(-25deg);
-}
-
-h1 {
-  color: #45d3dd;
-  text-shadow: black 0.1em 0.1em 0.4em;
-  margin-left: -3rem;
-  font-family: roboto;
-  font-weight: 500;
-  font-size: clamp(2rem, 7vw, 3rem);
-  max-width: 550px;
-  line-height: 100%;
-}
-
-h1::before,
-h1::after {
-  content: "<h1>";
-  position: absolute;
-  color: #707070;
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 1rem);
-  display: flex;
-  margin: -3rem 0 1rem 3rem;
-  text-shadow: none;
-}
-
-h1::after {
-  content: "<h1/>";
-  margin: 0;
-  margin-left: 3rem;
-}
-
-.focus {
-  color: #5bf9ff;
-  font-weight: 700;
-  font-size: clamp(2.2rem, 7vw, 3.2rem);
-  text-shadow: #ff0000 -0.2rem -0.1rem 0.2rem;
 }
 
 .line::before {
@@ -161,33 +15,6 @@ h1::after {
   width: 65%;
   background-color: #444;
 }
-
-p {
-  color: #505050;
-  text-shadow: black 0.1em 0.1em 0.2em;
-  margin: 4.5rem 0 3rem 1rem;
-  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
-  font-family: "Courier New", Courier, monospace;
-}
-
-p::before,
-p::after {
-  content: "<p>";
-  position: absolute;
-  color: #707070;
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 0.9rem);
-  display: flex;
-  margin: -1.5rem 0 1rem -1rem;
-  text-shadow: none;
-}
-
-p::after {
-  content: "<p/>";
-  margin: 0.2rem 0 0 -1rem;
-}
-
 .contact a {
   display: flex;
   justify-content: center;
@@ -205,7 +32,6 @@ p::after {
   overflow: hidden;
   position: relative;
 }
-
 .contact a::before {
   content: "";
   width: 100%;
@@ -215,7 +41,6 @@ p::after {
   z-index: -1;
   transition: all 0.5s;
 }
-
 .contact a::before {
   width: 100%;
   height: 0;
@@ -229,37 +54,6 @@ p::after {
 .contact a:hover {
   color: #333;
 }
-h2 {
-  color: #ffa800;
-  text-shadow: black 0.1em 0.1em 0.4em;
-  margin-left: -3rem;
-  margin-top: 50vh;
-  font-family: roboto;
-  font-weight: 800;
-  font-size: clamp(2rem, 7vw, 4rem);
-  max-width: 550px;
-  line-height: 100%;
-  letter-spacing: -3px;
-}
-
-h2::before,
-h2::after {
-  content: "< h2 >";
-  position: absolute;
-  color: #707070;
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 1rem);
-  display: flex;
-  margin: -3rem 0 1rem 3rem;
-  text-shadow: none;
-}
-
-h2::after {
-  content: "< h2/ >";
-  margin: 0;
-  margin-left: 3rem;
-}
 
 .container-description p {
   text-align: center;
@@ -268,44 +62,15 @@ h2::after {
   margin-left: 5%;
   color: #bbbbbb;
   text-shadow: none;
-
   letter-spacing: 4px;
   line-height: 100%;
 }
-
 .container-description p::before {
   margin: -1.5rem 0 1rem -4%;
 }
 .container-description p::after {
   margin: 0.2rem 0 0 -4%;
 }
-
-.scroll {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  margin: 0%;
-  position: absolute;
-  top: 80vh;
-  right: 10%;
-  gap: 5px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-shadow: none;
-  color: #fff;
-}
-
-.scroll span {
-  font-size: 1.2rem;
-  margin: 0;
-  writing-mode: vertical-rl;
-  animation-name: anima;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
 .container-skill .list {
   margin-top: 7%;
   margin-bottom: auto;
@@ -317,7 +82,6 @@ h2::after {
 .list li {
   list-style: none;
 }
-
 .list p {
   color: #bbbbbb;
   text-shadow: none;
@@ -330,7 +94,6 @@ h2::after {
   width: 40%;
   height: 2px;
 }
-
 .list .front {
   width: 30%;
   background-color: #307897;
@@ -359,36 +122,15 @@ h2::after {
   text-shadow: none;
   text-align: start;
   letter-spacing: 4px;
-
   line-height: 100%;
   font-size: 1.5rem;
   max-width: 70%;
   margin-bottom: auto;
 }
-
-.container-contact .form::after,
-.container-contact .form::before {
-  content: "<form>";
-  position: absolute;
-  color: #707070;
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 0.9rem);
-  display: flex;
-  margin: -1.5rem 0 1rem 0;
-  text-shadow: none;
-}
-
-.container-contact .form::after {
-  content: "<form/>";
-  margin-top: 0.2rem;
-}
-
 .container-contact .form {
   margin-top: 6vh;
 }
-
-form {
+.container-contact form {
   width: 100%;
   max-width: 30rem;
   margin-left: 2vw;
@@ -399,15 +141,15 @@ form {
   display: block;
   width: 100%;
 }
-form label {
+.container-contact form label {
   position: absolute;
   font-size: 1rem;
   color: #bbbbbb;
   padding: 20px 20px;
   max-width: max-content;
 }
-form input,
-form textarea {
+.container-contact form input,
+.container-contact form textarea {
   background-color: #444;
   border-style: none;
   padding: 20px;
@@ -416,86 +158,29 @@ form textarea {
   color: #bbbbbb;
   transition: border-color, box-shadown 0.5s;
 }
-
-form textarea {
+.container-contact form textarea {
   resize: vertical;
 }
-
-form input:hover,
-form input:focus,
-form textarea:hover,
-form textarea:focus {
+.container-contact form input:hover,
+.container-contact form input:focus,
+.container-contact form textarea:hover,
+.container-contact form textarea:focus {
   outline: none;
   border: 0 0 2px 0;
   border-bottom: #45d3dd;
   box-shadow: 0 0 0 2px #61dbfb;
 }
-form button {
+.container-contact form button {
   background-color: #333;
   border: 2px solid red;
   color: red;
   padding: 10px 20px;
   height: 100%;
 }
-
 .container-map {
   display: block;
   position: absolute;
-  top: 3878px;
+  top: 3680px;
   right: 30vh;
-  max-width: 100%;
-}
-@keyframes anima {
-  0% {
-    transform: translateY(-30%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@media (max-width: 1200px) {
-  .gear,
-  .insideGear {
-    display: none;
-  }
-
-  h2 {
-    margin-top: 20vh;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .header {
-    margin-top: 15rem;
-  }
-
-  h1 {
-    max-width: 350px;
-  }
-
-  .container-description p,
-  .container-contact p {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header {
-    margin-top: 5rem;
-  }
-  h2 {
-    margin-top: 10vh;
-  }
-  .scroll {
-    display: none;
-  }
-
-  .line::before {
-    display: none;
-  }
-
-  .container-description p,
-  .container-contact p {
-    font-size: 1rem;
-  }
+  max-width: 50%;
 }

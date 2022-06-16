@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+h1 {
+  color: #45d3dd;
+  text-shadow: black 0.1em 0.1em 0.4em;
+  margin-left: -3rem;
+  font-family: roboto;
+  font-weight: 500;
+  font-size: clamp(2rem, 7vw, 3rem);
+  max-width: 550px;
+  line-height: 100%;
+}
+h1::before,
+h1::after {
+  content: "<h1>";
+  position: absolute;
+  color: #707070;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  display: flex;
+  margin: -3rem 0 1rem 3rem;
+  text-shadow: none;
+}
+h1::after {
+  content: "<h1/>";
+  margin: 0;
+  margin-left: 3rem;
+}
+.focus {
+  color: #5bf9ff;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 7vw, 3.2rem);
+  text-shadow: #ff0000 -0.2rem -0.1rem 0.2rem;
+}
+p {
+  color: #505050;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin: 4.5rem 0 3rem 1rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  font-family: "Courier New", Courier, monospace;
+}
+p::before,
+p::after {
+  content: "<p>";
+  position: absolute;
+  color: #707070;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  display: flex;
+  margin: -1.5rem 0 1rem -1rem;
+  text-shadow: none;
+}
+p::after {
+  content: "<p/>";
+  margin: 0.2rem 0 0 -1rem;
+}
+h2 {
+  color: #ffa800;
+  text-shadow: black 0.1em 0.1em 0.4em;
+  margin-left: -3rem;
+  margin-top: 50vh;
+  font-family: roboto;
+  font-weight: 800;
+  font-size: clamp(2rem, 7vw, 4rem);
+  max-width: 550px;
+  line-height: 100%;
+  letter-spacing: -3px;
+}
+h2::before,
+h2::after {
+  content: "< h2 >";
+  position: absolute;
+  color: #707070;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  display: flex;
+  margin: -3rem 0 1rem 3rem;
+  text-shadow: none;
+}
+h2::after {
+  content: "< h2/ >";
+  margin: 0;
+  margin-left: 3rem;
+}
+.container-contact .form::after,
+.container-contact .form::before {
+  content: "<form>";
+  position: absolute;
+  color: #707070;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  display: flex;
+  margin: -1.5rem 0 1rem 0;
+  text-shadow: none;
+}
+.container-contact .form::after {
+  content: "<form/>";
+  margin-top: 0.2rem;
+}
