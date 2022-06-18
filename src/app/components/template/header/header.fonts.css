@@ -34,7 +34,7 @@ h1::after {
   text-shadow: #ff0000 -0.2rem -0.1rem 0.2rem;
 }
 p {
-  color: #505050;
+  color: #bbb;
   text-shadow: black 0.1em 0.1em 0.2em;
   margin: 4.5rem 0 3rem 1rem;
   font-size: clamp(0.8rem, 2.5vw, 1.2rem);

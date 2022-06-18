@@ -1,7 +1,7 @@
 <div class="container">
   <nav class="navbar">
     <div>
-      <span class="logo"><a href="#">M.</a></span>
+      <span class="logo"><a (click)="toHome()" routerLink="/home">M.</a></span>
     </div>
     <div class="mobile-nav burguer" (click)="toggleMenu()">
       <i class="material-icons">{{isMenuOpen ? 'close' : 'menu'}}</i>
@@ -9,10 +9,10 @@
 
     <div id="menu">
       <ul class="list" [class.active]="isMenuOpen">
-        <li><a href="#">My Description</a></li>
-        <li><a href="#">work</a></li>
-        <li><a href="#">My Skills</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a (click)="toDescription()" routerLink="/description">My Description</a></li>
+        <li><a (click)="toWork()" routerLink="/work">work</a></li>
+        <li><a (click)="toSkill()" routerLink="/skills">My Skills</a></li>
+        <li><a (click)="toContact()" routerLink="/contact">Contact</a></li>
       </ul>
     </div>
   </nav>

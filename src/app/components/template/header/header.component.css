@@ -128,7 +128,9 @@
   margin-bottom: auto;
 }
 .container-contact .form {
+  margin: auto;
   margin-top: 6vh;
+  margin-bottom: 20vh;
 }
 .container-contact form {
   width: 100%;
@@ -160,6 +162,7 @@
 }
 .container-contact form textarea {
   resize: vertical;
+  z-index: 1;
 }
 .container-contact form input:hover,
 .container-contact form input:focus,
@@ -177,10 +180,31 @@
   padding: 10px 20px;
   height: 100%;
 }
-.container-map {
-  display: block;
+
+.container-map iframe {
+  display: inline-block;
   position: absolute;
-  top: 3680px;
-  right: 30vh;
-  max-width: 50%;
+  margin-top: 60px;
+  margin-left: 565px;
+  width: 645px;
+  height: 500px;
 }
+.container-map iframe::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  background-color: #dd1b16;
+}
+
+@media (max-width: 1440px) {
+  .container-contact .form {
+  }
+  .container-map iframe {
+    max-width: 100%;
+    width: 300px;
+    margin-top: 214px;
+    margin-left: 549px;
+    height: 437px;
+  }
+} ;

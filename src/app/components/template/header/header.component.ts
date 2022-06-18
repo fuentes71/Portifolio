@@ -13,4 +13,8 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  toContact() {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  }
 }

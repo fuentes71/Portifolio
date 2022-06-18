@@ -17,4 +17,25 @@ export class NavComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  toHome() {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+  toDescription() {
+    document
+      .getElementById("description")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }
+  toWork() {
+    document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
+  }
+  toSkill() {
+    document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
+  }
+  toContact() {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  }
 }
