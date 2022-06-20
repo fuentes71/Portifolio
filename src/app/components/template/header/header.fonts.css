@@ -5,18 +5,25 @@ h1 {
   text-shadow: black 0.1em 0.1em 0.4em;
   margin-left: -3rem;
   font-family: roboto;
-  font-weight: 500;
+  font-weight: 800;
   font-size: clamp(2rem, 7vw, 3rem);
   max-width: 550px;
   line-height: 100%;
 }
 h1::before,
-h1::after {
+h1::after,
+h2::after,
+h2::before,
+p::before,
+p::after,
+.container-contact .form::after,
+.container-contact .form::before {
   content: "<h1>";
   position: absolute;
   color: #707070;
   font-family: "La Belle Aurore", cursive;
   font-weight: 800;
+  letter-spacing: 1px;
   font-size: clamp(0.8rem, 1vw, 1rem);
   display: flex;
   margin: -3rem 0 1rem 3rem;
@@ -35,22 +42,15 @@ h1::after {
 }
 p {
   color: #bbb;
-  text-shadow: black 0.1em 0.1em 0.2em;
   margin: 4.5rem 0 3rem 1rem;
+  letter-spacing: 2px;
   font-size: clamp(0.8rem, 2.5vw, 1.2rem);
   font-family: "Courier New", Courier, monospace;
 }
 p::before,
 p::after {
   content: "<p>";
-  position: absolute;
-  color: #707070;
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 0.9rem);
-  display: flex;
   margin: -1.5rem 0 1rem -1rem;
-  text-shadow: none;
 }
 p::after {
   content: "<p/>";
@@ -70,34 +70,60 @@ h2 {
 }
 h2::before,
 h2::after {
-  content: "< h2 >";
-  position: absolute;
-  color: #707070;
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 1rem);
-  display: flex;
+  content: "<h2>";
   margin: -3rem 0 1rem 3rem;
-  text-shadow: none;
 }
 h2::after {
-  content: "< h2/ >";
+  content: "<h2/>";
   margin: 0;
   margin-left: 3rem;
 }
 .container-contact .form::after,
 .container-contact .form::before {
   content: "<form>";
-  position: absolute;
-  color: #707070;
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 0.9rem);
-  display: flex;
   margin: -1.5rem 0 1rem 0;
-  text-shadow: none;
 }
 .container-contact .form::after {
   content: "<form/>";
   margin-top: 0.2rem;
+}
+
+@media (max-width: 1200px) {
+  .gear,
+  .insideGear {
+    display: none;
+  }
+  h2 {
+    margin-top: 20vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    margin-top: 15rem;
+  }
+  h1 {
+    max-width: 350px;
+  }
+  .container-description p,
+  .container-contact p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: 5rem;
+  }
+  h2 {
+    margin-top: 10vh;
+  }
+  .scroll {
+    display: none;
+  }
+  .line::before {
+    display: none;
+  }
+  .container-description p,
+  .container-contact p {
+    font-size: 1rem;
+  }
 }

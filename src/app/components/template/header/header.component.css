@@ -15,13 +15,14 @@
   width: 65%;
   background-color: #444;
 }
-.contact a {
+.button-contact a,
+.container-contact button {
   display: flex;
   justify-content: center;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-decoration: none;
-  margin: 2vh 60% 6px 28%;
+  margin: 0 0 0 29%;
   color: #ff0000;
   border: 1px solid #ff0000;
   padding: 10px 15px;
@@ -30,9 +31,10 @@
   font-size: clamp(0.6rem, 1vw, 1.1rem);
   cursor: pointer;
   overflow: hidden;
-  position: relative;
+  position: absolute;
 }
-.contact a::before {
+.button-contact a::before,
+.container-contact form button::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -41,17 +43,20 @@
   z-index: -1;
   transition: all 0.5s;
 }
-.contact a::before {
+.button-contact a::before,
+.container-contact form button::before {
   width: 100%;
   height: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-.contact a:hover::before {
+.button-contact a:hover::before,
+.container-contact form button:hover:before {
   height: 400%;
 }
-.contact a:hover {
+.button-contact a:hover,
+.container-contact form button:hover {
   color: #333;
 }
 
@@ -73,7 +78,7 @@
 }
 .container-skill .list {
   margin-top: 7%;
-  margin-bottom: auto;
+  margin-bottom: 30vh;
 }
 .list p::after,
 .list p::before {
@@ -128,27 +133,20 @@
   margin-bottom: auto;
 }
 .container-contact .form {
-  margin: auto;
-  margin-top: 6vh;
-  margin-bottom: 20vh;
+  position: absolute;
+  margin: 6vh 40px 60vh 0;
+  max-width: 60%;
 }
 .container-contact form {
   width: 100%;
-  max-width: 30rem;
+  max-width: 100%;
   margin-left: 2vw;
+  border-radius: 1px;
 }
-.container-contact form label,
 .container-contact form input,
 .container-contact form textarea {
   display: block;
-  width: 100%;
-}
-.container-contact form label {
-  position: absolute;
-  font-size: 1rem;
-  color: #bbbbbb;
-  padding: 20px 20px;
-  max-width: max-content;
+  width: 90%;
 }
 .container-contact form input,
 .container-contact form textarea {
@@ -159,6 +157,9 @@
   font-size: 1rem;
   color: #bbbbbb;
   transition: border-color, box-shadown 0.5s;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
 }
 .container-contact form textarea {
   resize: vertical;
@@ -170,41 +171,14 @@
 .container-contact form textarea:focus {
   outline: none;
   border: 0 0 2px 0;
+
   border-bottom: #45d3dd;
   box-shadow: 0 0 0 2px #61dbfb;
+  border-radius: 1px;
 }
 .container-contact form button {
-  background-color: #333;
-  border: 2px solid red;
-  color: red;
-  padding: 10px 20px;
-  height: 100%;
+  position: relative;
+  background: none;
+  max-width: 50vw;
+  margin: 0;
 }
-
-.container-map iframe {
-  display: inline-block;
-  position: absolute;
-  margin-top: 60px;
-  margin-left: 565px;
-  width: 645px;
-  height: 500px;
-}
-.container-map iframe::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 50px;
-  background-color: #dd1b16;
-}
-
-@media (max-width: 1440px) {
-  .container-contact .form {
-  }
-  .container-map iframe {
-    max-width: 100%;
-    width: 300px;
-    margin-top: 214px;
-    margin-left: 549px;
-    height: 437px;
-  }
-} ;

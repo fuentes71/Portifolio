@@ -117,50 +117,18 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+h1:hover,
+h2:hover,
+p:hover {
+  -webkit-animation: 1s alternate;
+}
+
 @keyframes anima {
   0% {
     transform: translateY(-30%);
   }
   100% {
     transform: translateY(0%);
-  }
-}
-@media (max-width: 1200px) {
-  .gear,
-  .insideGear {
-    display: none;
-  }
-  h2 {
-    margin-top: 20vh;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .header {
-    margin-top: 15rem;
-  }
-  h1 {
-    max-width: 350px;
-  }
-  .container-description p,
-  .container-contact p {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header {
-    margin-top: 5rem;
-  }
-  h2 {
-    margin-top: 10vh;
-  }
-  .scroll {
-    display: none;
-  }
-  .line::before {
-    display: none;
-  }
-  .container-description p,
-  .container-contact p {
-    font-size: 1rem;
   }
 }

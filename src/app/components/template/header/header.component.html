@@ -20,13 +20,13 @@
       <p>
         Front end Developer / Web Developer
       </p>
-      <div class="contact">
+      <div class="button-contact">
         <a (click)="toContact()" routerLink="/contact">Contact me!</a>
       </div>
     </div>
     <div class="scroll">
       <span>Scroll Down</span>
-      <img src="src/assets/img/icon-arrow-down.png" alt="icon-arrow-down" width="22px">
+      <img src="/assets/img/icon-arrow-down.png" alt="icon-arrow-down" width="22px">
     </div>
     <div class="gear second">
       <img class="gear1" src="/assets/img/gear.svg" alt="gear">
@@ -67,11 +67,11 @@
         <div class="list">
           <ul>
             <li>
-              <p>Front End</p>
+              <p>Front-End</p>
               <span class="progress front"></span>
             </li>
             <li>
-              <p>Back End</p>
+              <p>Back-End</p>
               <span class="progress back"></span>
             </li>
             <li>
@@ -96,19 +96,14 @@
           I'm interested in service opportunities – However, if you have any other requests or questions, please don't hesitate to use the form.
         </p>
         <span class="line"></span>
-        <div class="container-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217097.9679453164!2d-52.341560071546034!3d-31.766237703811257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b457485210e3%3A0x8e967b24d7892f59!2sR.%20Mal.%20Fel%C3%ADciano%20Mendes%20de%20Morais%2C%20297%20-%20Areal%2C%20Pelotas%20-%20RS%2C%2096080-670!5e0!3m2!1spt-BR!2sbr!4v1655323371048!5m2!1spt-BR!2sbr" width="auto" height="auto" style="border: 0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <!-- <div class="container-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217097.9679453164!2d-52.341560071546034!3d-31.766237703811257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b457485210e3%3A0x8e967b24d7892f59!2sR.%20Mal.%20Fel%C3%ADciano%20Mendes%20de%20Morais%2C%20297%20-%20Areal%2C%20Pelotas%20-%20RS%2C%2096080-670!5e0!3m2!1spt-BR!2sbr!4v1655323371048!5m2!1spt-BR!2sbr" width="auto" height="auto" style="border: 0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> -->
 
         <div class="form">
-
           <form action="https://formsubmit.co/matheus.fu.p@hotmail.com" autocomplete="off" method="POST">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
-            <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject" required>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" required cols="50" rows="10"></textarea>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <textarea name="message" id="message" placeholder="Message" required cols="50" rows="10"></textarea>
             <button type="submit">Send message!</button>
           </form>
 
