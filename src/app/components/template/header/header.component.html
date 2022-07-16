@@ -2,9 +2,9 @@
   <div id="home">
     <div>
       <div class="gear">
-        <img class="gear1" src="/assets/img/gear.svg" alt="gear">
-        <img class="gear2" src="/assets/img/gear.svg" alt="gear">
-        <img class="gear3" src="/assets/img/gear.svg" alt="gear">
+        <img class="gear1" src="./assets/img/gear.svg" alt="gear">
+        <img class="gear2" src="./assets/img/gear.svg" alt="gear">
+        <img class="gear3" src="./assets/img/gear.svg" alt="gear">
       </div>
       <div class="insideGear">
         <span class="js">JS</span>
@@ -26,13 +26,9 @@
     </div>
     <div class="scroll">
       <span>Scroll Down</span>
-      <img src="/assets/img/icon-arrow-down.png" alt="icon-arrow-down" width="22px">
+      <img src="./assets/img/icon-arrow-down.png" alt="icon-arrow-down" width="22px">
     </div>
-    <div class="gear second">
-      <img class="gear1" src="/assets/img/gear.svg" alt="gear">
-      <img class="gear2" src="/assets/img/gear.svg" alt="gear">
-      <img class="gear3" src="/assets/img/gear.svg" alt="gear">
-    </div>
+
     <div class="container-description" id="description">
       <h2>Me and Me</h2>
       <span class="line"></span>
@@ -40,75 +36,75 @@
         Welcome to my portfolio. <br><br> I'm 22 years old and I'm starting in this area, I attended 1 year and a half in college, but I decided to stop to better focus on the Front end. <br><br> Today I have a good knowledge of the area that I decided to dedicate myself. <br><br> I love working in a team, I always try to be proactive and have good communication with everyone.
       </p>
     </div>
-    <div class="gear third">
-      <img class="gear1" src="/assets/img/gear.svg" alt="gear">
-      <img class="gear2" src="/assets/img/gear.svg" alt="gear">
-      <img class="gear3" src="/assets/img/gear.svg" alt="gear">
-    </div>
     <div class="container-work" id="work">
       <section>
         <h2>Work</h2>
         <span class="line"></span>
-        <ul>
-          <li><img src="/assets/img/Test_image.jng" alt="" width="100%"></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-        </ul>
-      </section>
-      <div class="gear four">
-        <img class="gear1" src="/assets/img/gear.svg" alt="gear">
-        <img class="gear2" src="/assets/img/gear.svg" alt="gear">
-        <img class="gear3" src="/assets/img/gear.svg" alt="gear">
-      </div>
-      <div class="container-skill" id="skills">
-        <h2> My Skills</h2>
-        <span class="line"></span>
-        <div class="list">
-          <ul>
-            <li>
-              <p>Front-End</p>
-              <span class="progress front"></span>
-            </li>
-            <li>
-              <p>Back-End</p>
-              <span class="progress back"></span>
-            </li>
-            <li>
-              <p>Angular</p>
-              <span class="progress angular"></span>
-            </li>
-            <li>
-              <p>React</p>
-              <span class="progress react"></span>
-            </li>
-            <li>
-              <p>Vue js</p>
-              <span class="progress vue"></span>
-            </li>
+        <section class="grid-section work">
+          <ul class="list-work">
+            <li><img (click)="firstProject()" src="./assets/img/Test_image.jpg" alt=""></li>
+            <li><img (click)="secondProject()" src="./assets/img/Test_image.jpg" alt=""></li>
+            <li><img (click)="threeProject()" src="./assets/img/Test_image.jpg" alt=""></li>
+            <li><img (click)="fourProject()" src="./assets/img/Test_image.jpg" alt=""></li>
           </ul>
-        </div>
+          <div class="description-work">
+            <section class="firstDescription active">
+              <h3>Teste 01</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores corrupti praesentium quos deleniti! Aliquid, deleniti quisquam? Necessitatibus odio dignissimos fugit quos dolore facere maiores blanditiis voluptate accusamus repudiandae! Sunt.</p>
+            </section>
+            <section class="secondDescription">
+              <h3>Teste 2</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, assumenda beatae repudiandae molestiae, rem, in perspiciatis quia dignissimos modi voluptatem nisi ab eos dolore recusandae suscipit eius minima corrupti officia.</p>
+            </section>
+            <section class="threeDescription">
+              <h3>Teste 3</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In libero, maxime ex consequuntur modi ab commodi accusamus officiis, praesentium harum optio sit est, illum quae sequi quasi exercitationem. Culpa, vero?</p>
+            </section>
+            <section class="fourDescription">
+              <h3>Teste 4</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt architecto consectetur eius illo! Porro corrupti deserunt omnis qui maxime. Ad est aspernatur enim, cupiditate repellat excepturi qui veritatis commodi nesciunt.</p>
+            </section>
+          </div>
+        </section>
+      </section>
+    </div>
+    <div class="container-skill" id="skills">
+      <h2> My Skills</h2>
+      <span class="line"></span>
+      <div class="list">
+        <ul>
+          <li>
+            <p>Angular</p>
+            <span class="progress angular"></span>
+          </li>
+          <li>
+            <p>React</p>
+            <span class="progress react"></span>
+          </li>
+          <li>
+            <p>Vue js</p>
+            <span class="progress vue"></span>
+          </li>
+        </ul>
       </div>
-      <div class="container-contact" id="contact">
-        <h2>Contact me</h2>
-        <span class="line"></span>
-        <p>
-          I'm interested in service opportunities – However, if you have any other requests or questions, please don't hesitate to use the form.
-        </p>
-        <span class="line"></span>
-        <!-- <div class="container-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217097.9679453164!2d-52.341560071546034!3d-31.766237703811257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b457485210e3%3A0x8e967b24d7892f59!2sR.%20Mal.%20Fel%C3%ADciano%20Mendes%20de%20Morais%2C%20297%20-%20Areal%2C%20Pelotas%20-%20RS%2C%2096080-670!5e0!3m2!1spt-BR!2sbr!4v1655323371048!5m2!1spt-BR!2sbr" width="auto" height="auto" style="border: 0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> -->
-
-        <div class="form">
-          <form action="https://formsubmit.co/matheus.fu.p@hotmail.com" autocomplete="off" method="POST">
-            <input type="text" name="name" id="name" placeholder="Name" required>
-            <input type="text" name="subject" id="subject" placeholder="Subject" required>
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
-            <textarea name="message" id="message" placeholder="Message" required cols="50" rows="10"></textarea>
-            <button type="submit">Send message!</button>
-          </form>
-
-        </div>
+    </div>
+    <div class="container-contact" id="contact">
+      <h2>Contact me</h2>
+      <span class="line"></span>
+      <p>
+        I'm interested in service opportunities – However, if you have any other requests or questions, please don't hesitate to use the form.
+      </p>
+      <span class="line"></span>
+      <div class="form">
+        <form action="https://formsubmit.co/matheus.fu.p@hotmail.com" autocomplete="off" method="POST">
+          <input type="text" name="name" id="name" placeholder="Name" required>
+          <input type="text" name="subject" id="subject" placeholder="Subject" required>
+          <input type="email" name="email" id="email" placeholder="E-mail" required>
+          <textarea name="message" id="message" placeholder="Message" required cols="50" rows="10"></textarea>
+          <button type="submit">Send message!</button>
+        </form>
       </div>
     </div>
   </div>
+
 </mat-toolbar-row>

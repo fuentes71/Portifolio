@@ -2,14 +2,13 @@ body {
   overflow: hidden;
 }
 .container {
-  display: grid;
-  margin-top: -385px;
+  top: 0;
   position: fixed;
   width: 100%;
+  z-index: 10001;
 }
 
 .navbar {
-  position: fixed;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +26,8 @@ body {
 }
 
 .logo {
+  position: absolute;
+  top: 1rem;
   margin: 0px 50px 0 20vw;
   color: #5bf9ff;
   font-weight: 700;
@@ -74,9 +75,6 @@ body {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  .container {
-    margin-top: -305px;
-  }
   .logo {
     margin-left: 5vw;
   }
@@ -106,7 +104,7 @@ body {
     gap: 60px;
     position: fixed;
     z-index: 1000;
-    inset: 30px -5vw -2vh 60vw;
+    inset: 33.5px -5vw -2vh 60vw;
     padding: min(15vh, 5rem) 2em;
     transform: translateX(150%);
   }
@@ -125,22 +123,14 @@ body {
     color: #f4f4f4;
     width: 2rem;
     top: 1rem;
-    right: 5.5rem;
+    right: 10%;
     z-index: 9999;
     cursor: pointer;
   }
 
-  .container {
-    margin-top: -150px;
-  }
-  @media screen and (max-width: 600px) {
-    .container {
-      margin-top: -142px;
-    }
-  }
   @media screen and (max-width: 480px) {
     .list {
-      inset: 30px -5vw -2vh 38vw;
+      inset: 33.5px -5vw -2vh 38vw;
     }
   }
 }

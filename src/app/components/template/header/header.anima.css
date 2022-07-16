@@ -4,17 +4,7 @@
   top: 18vh;
   right: 13vw;
 }
-.second {
-  top: 55vh;
-  right: 67%;
-  transform: rotate(275deg);
-}
-.third {
-  top: 180vh;
-}
-.four {
-  top: 305vh;
-}
+
 .gear .gear1,
 .gear2,
 .gear3 {
@@ -117,13 +107,6 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
-h1:hover,
-h2:hover,
-p:hover {
-  -webkit-animation: 1s alternate;
-}
-
 @keyframes anima {
   0% {
     transform: translateY(-30%);

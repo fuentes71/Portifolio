@@ -35,7 +35,7 @@ h1::after {
   margin-left: 3rem;
 }
 .focus {
-  color: #5bf9ff;
+  color: #45d3dd;
   font-weight: 700;
   font-size: clamp(2.2rem, 7vw, 3.2rem);
   text-shadow: #ff0000 -0.2rem -0.1rem 0.2rem;
@@ -85,7 +85,7 @@ h2::after {
 }
 .container-contact .form::after {
   content: "<form/>";
-  margin-top: 0.2rem;
+  margin-top: -9.2rem;
 }
 
 @media (max-width: 1200px) {
@@ -99,7 +99,7 @@ h2::after {
 }
 @media screen and (max-width: 1024px) {
   .header {
-    margin-top: 15rem;
+    margin-top: 16rem;
   }
   h1 {
     max-width: 350px;
@@ -110,8 +110,8 @@ h2::after {
   }
 }
 @media screen and (max-width: 768px) {
-  .header {
-    margin-top: 5rem;
+  .button-contact {
+    margin-bottom: 10rem;
   }
   h2 {
     margin-top: 10vh;
@@ -122,8 +122,32 @@ h2::after {
   .line::before {
     display: none;
   }
+  .container-work section {
+    left: 0;
+  }
+  .grid-section {
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+  }
+  .list-work {
+    grid-column: 1;
+  }
   .container-description p,
   .container-contact p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1,
+  h2 {
+    margin-left: -1rem;
+  }
+
+  h1::before,
+  h1::after,
+  h2::after,
+  h2::before {
+    margin-left: 1rem;
   }
 }

@@ -3,9 +3,7 @@
     <div>
       <span class="logo"><a (click)="toHome()" routerLink="/home">M.</a></span>
     </div>
-    <div class="mobile-nav burguer" (click)="toggleMenu()">
-      <i class="material-icons">{{isMenuOpen ? 'close' : 'menu'}}</i>
-    </div>
+    <div class="mobile-nav" (click)="toggleMenu()"><i class="material-icons">{{isMenuOpen ? 'close' : 'menu'}}</i></div>
 
     <div id="menu">
       <ul class="list" [class.active]="isMenuOpen">

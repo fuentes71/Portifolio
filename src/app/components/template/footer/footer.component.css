@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-footer {
+  position: fixed;
+  left: 0;
+  top: calc(50% - (275px / 2));
+  width: 55px;
+  height: 275px;
+}
+.container-footer a {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 45px;
+  padding: 2px 0;
+  margin-left: -50px;
+  transition: transform 425ms cubic-bezier(0.05, 0.65, 0.18, 1);
+}
+.container-footer ul {
+  list-style: none;
+}
+
+.container-footer li {
+  margin-left: 15px;
+}
+
+.container-footer small {
+  position: absolute;
+  top: -30px;
+  left: -8px;
+  width: 100%;
+  text-align: right;
+  color: #7a7a7a;
+  font-weight: 600;
+  font-size: 0.65em;
+}
+.container-footer img {
+  margin-left: 30px;
+  width: 35px;
+  max-width: 100%;
+}
+
+.linkedin {
+  background-color: #0077ba;
+}
+
+.github {
+  background-color: #7a7a7a;
+}
+
+.instagram {
+  background: radial-gradient(
+      circle at 25% 110%,
+      #fdf497 0,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    ),
+    radial-gradient(
+      circle at 25% 110%,
+      #b9a800 0,
+      #938500 5%,
+      #b10f00 45%,
+      #8c0061 60%,
+      #002ca9 90%
+    );
+}
+.github:hover,
+.linkedin:hover,
+.instagram:hover {
+  -webkit-transform: translate3d(20px, 0, 0);
+  transform: translate3d(20px, 0, 0);
+}
+
+@media screen and (max-width: 480px) {
+  .container-footer small {
+    top: -20px;
+    left: -12px;
+  }
+  .container-footer a {
+    margin-left: -58px;
+  }
+  .container-footer img {
+    margin-left: 40px;
+  }
+}

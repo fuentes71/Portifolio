@@ -25,17 +25,35 @@ export class NavComponent implements OnInit {
     });
   }
   toDescription() {
-    document
-      .getElementById("description")
-      ?.scrollIntoView({ behavior: "smooth" });
+    const description = document.getElementById("description");
+    const descriptionTop = Number(description?.offsetTop);
+    window.scroll({
+      top: descriptionTop - 95,
+      behavior: "smooth",
+    });
   }
   toWork() {
-    document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
+    const work = document.getElementById("work");
+    const workTop = Number(work?.offsetTop);
+    window.scroll({
+      top: workTop - 10,
+      behavior: "smooth",
+    });
   }
   toSkill() {
-    document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
+    const skill = document.getElementById("skills");
+    const skillTop = Number(skill?.offsetTop);
+    window.scroll({
+      top: skillTop - 95,
+      behavior: "smooth",
+    });
   }
   toContact() {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    const contact = document.getElementById("contact");
+    const contactTop = Number(contact?.offsetTop);
+    window.scroll({
+      top: contactTop - 95,
+      behavior: "smooth",
+    });
   }
 }
